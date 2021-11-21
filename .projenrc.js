@@ -4,15 +4,30 @@ const project = new AwsCdkConstructLibrary({
   authorAddress: 'ayush987goyal@gmail.com',
   cdkVersion: '1.129.0',
   defaultReleaseBranch: 'main',
-  name: 'verdaccio-construct',
-  repositoryUrl: 'https://github.com/ayush987goyal/verdaccio-construct.git',
-
-  // cdkDependencies: undefined,      /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
-  // cdkTestDependencies: undefined,  /* AWS CDK modules required for testing. */
-  // deps: [],                        /* Runtime dependencies of this module. */
-  // description: undefined,          /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],                     /* Build dependencies for this module. */
-  // packageName: undefined,          /* The "name" in package.json. */
-  // release: undefined,              /* Add release management to this project. */
+  name: 'verdaccio-service-construct',
+  repositoryUrl: 'https://github.com/ayush987goyal/verdaccio-service-construct.git',
+  cdkDependencies: [
+    '@aws-cdk/aws-certificatemanager',
+    '@aws-cdk/aws-ec2',
+    '@aws-cdk/aws-ecs',
+    '@aws-cdk/aws-ecs-patterns',
+    '@aws-cdk/aws-efs',
+    '@aws-cdk/aws-elasticloadbalancingv2',
+    '@aws-cdk/aws-route53',
+    '@aws-cdk/aws-route53-targets',
+    '@aws-cdk/aws-secretsmanager',
+    '@aws-cdk/core',
+  ],
+  deps: [
+    'yaml',
+    '@types/yaml',
+  ],
+  bundledDeps: [
+    'yaml',
+    '@types/yaml',
+  ],
+  gitignore: [
+    'src/assets/config.yaml',
+  ],
 });
 project.synth();
