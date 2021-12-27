@@ -4,8 +4,11 @@ const project = new AwsCdkConstructLibrary({
   authorAddress: 'ayush987goyal@gmail.com',
   cdkVersion: '1.129.0',
   defaultReleaseBranch: 'main',
+  projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
+
   name: 'verdaccio-service-construct',
   repositoryUrl: 'https://github.com/ayush987goyal/verdaccio-service-construct.git',
+
   cdkDependencies: [
     '@aws-cdk/aws-certificatemanager',
     '@aws-cdk/aws-ec2',
@@ -29,5 +32,11 @@ const project = new AwsCdkConstructLibrary({
   gitignore: [
     'src/assets/config.yaml',
   ],
+
+  autoApproveOptions: {
+    allowedUsernames: ['auyush987goyal-automation'],
+    secret: 'GITHUB_TOKEN',
+  },
+  autoApproveUpgrades: true,
 });
 project.synth();
