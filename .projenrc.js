@@ -1,5 +1,5 @@
-const { AwsCdkConstructLibrary } = require('projen');
-const project = new AwsCdkConstructLibrary({
+const { awscdk } = require('projen');
+const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Ayush Goyal',
   authorAddress: 'ayush987goyal@gmail.com',
   cdkVersion: '1.129.0',
