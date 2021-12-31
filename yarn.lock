@@ -4484,7 +4484,7 @@ jsii-diff@^1.50.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^4.2.25:
+jsii-docgen@^4.2.26:
   version "4.2.26"
   resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.26.tgz#770749d935f7ce54ca5d3fccc0bf409dfbd995d2"
   integrity sha512-6frkWUDxEXFaQFe7jyrn7ap0/ryhkeUxeokS/1ooaY7n638RJ7m6LdGDcIVnm79jXjD3wJ2fB4eiXoDolVZdJQ==
@@ -5556,7 +5556,7 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.47.12:
+projen@^0.47.13:
   version "0.47.13"
   resolved "https://registry.yarnpkg.com/projen/-/projen-0.47.13.tgz#29652cb75b11f548685be527f87a9889a71aefe3"
   integrity sha512-X8D4vmSnGNX2VpZ3VrGoE4nuX5xPZThFTJ1uP+dtq1MY0sqUaqR8nPfD9DB716/Pat58WZi59Zq8+UUuN/PHFA==
