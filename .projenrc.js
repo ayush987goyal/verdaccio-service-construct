@@ -22,8 +22,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@aws-cdk/core',
   ],
   deps: [
-    'yaml',
-    '@types/yaml',
+    'yaml@^1.10.2',
+    '@types/yaml@^1.9.7',
   ],
   bundledDeps: [
     'yaml',
@@ -32,6 +32,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: [
     'src/assets/config.yaml',
   ],
+  workflowNodeVersion: '16.0.0',
 
   autoApproveOptions: {
     allowedUsernames: ['ayush987goyal'],
