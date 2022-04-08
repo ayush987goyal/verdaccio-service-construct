@@ -22,8 +22,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@aws-cdk/core',
   ],
   deps: [
-    'yaml',
-    '@types/yaml',
+    'yaml@^1.10.2',
+    '@types/yaml@^1.9.7',
   ],
   bundledDeps: [
     'yaml',
