@@ -32,6 +32,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: [
     'src/assets/config.yaml',
   ],
+  minNodeVersion: '14.0.0',
 
   autoApproveOptions: {
     allowedUsernames: ['ayush987goyal'],
