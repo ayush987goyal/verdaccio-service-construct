@@ -32,7 +32,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: [
     'src/assets/config.yaml',
   ],
-  workflowNodeVersion: '16.0.0',
+  workflowNodeVersion: '18.0.0',
 
   autoApproveOptions: {
     allowedUsernames: ['ayush987goyal'],
